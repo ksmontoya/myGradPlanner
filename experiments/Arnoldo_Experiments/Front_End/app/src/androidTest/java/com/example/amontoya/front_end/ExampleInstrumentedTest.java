@@ -1,4 +1,4 @@
-package com.example.arnoldo.front_end;
+package com.example.amontoya.front_end;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.arnoldo.front_end", appContext.getPackageName());
+        assertEquals("com.example.amontoya.front_end", appContext.getPackageName());
     }
 }

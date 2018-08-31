@@ -1,4 +1,4 @@
-package com.example.arnoldo.front_end;
+package com.example.amontoya.front_end;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,13 +13,14 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.arnoldo.front_end.R;
 
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         final TextView mTextView = (TextView) findViewById(R.id.message);
         final EditText editText = (EditText) findViewById(R.id.editText);
         final RequestQueue queue = Volley.newRequestQueue(this);
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 String url = editText.getText().toString();
 
                 // Request a string response from the provided URL.
-                StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://" + url,
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
@@ -50,7 +51,5 @@ public class MainActivity extends AppCompatActivity {
                 queue.add(stringRequest);
             }
         });
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 }
