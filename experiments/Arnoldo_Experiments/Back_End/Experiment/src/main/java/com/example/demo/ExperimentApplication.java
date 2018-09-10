@@ -12,14 +12,38 @@ public class ExperimentApplication {
 
 	@RequestMapping("/")
 	@ResponseBody
-	String homeGirl() {
+	String hello() {
+		return "Hello World!";
+	}
+	
+	@RequestMapping("/1")
+	@ResponseBody
+	String hello1() {
+		return "Hello Tanmay!";
+	}
+	
+	@RequestMapping("/2")
+	@ResponseBody
+	String hello2() {
+		return "Hello Arnoldo!";
+	}
+	
+	@RequestMapping("/3")
+	@ResponseBody
+	String hello3() {
 		return "Hello Karla!";
 	}
 	
-	@RequestMapping("/Arnoldo")
+	@RequestMapping("/4")
 	@ResponseBody
-	String homeBoy() {
-		return "Hello Arnoldo!";
+	String hello4() {
+		return "Hello Josh!";
+	}
+	
+	@RequestMapping("/5")
+	@ResponseBody
+	String hello5() {
+		return "Hello Andrew!";
 	}
 	
 	public static void main(String[] args) {
