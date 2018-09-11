@@ -5,21 +5,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_cpre_courses"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="CprE" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_ee_courses"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="EE" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_se_courses"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="SE" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_tech_courses"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Tech" />
     </group>
 
     <item android:title="Communicate">

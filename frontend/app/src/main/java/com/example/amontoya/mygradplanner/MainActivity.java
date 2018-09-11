@@ -1,5 +1,6 @@
 package com.example.amontoya.mygradplanner;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -79,15 +80,28 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        if (id == R.id.nav_cpre_courses) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                    , new Cpre_Classes_List())
+                    .commit();
+        } else if (id == R.id.nav_ee_courses) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new EE_Classes_List())
+                    .commit();
+        } else if (id == R.id.nav_se_courses) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new SE_Classes_List())
+                    .commit();
+        } else if (id == R.id.nav_tech_courses) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new Tech_Classes_List())
+                    .commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
