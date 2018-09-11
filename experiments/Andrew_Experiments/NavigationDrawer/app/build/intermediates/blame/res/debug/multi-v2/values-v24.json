@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/home/avogler/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/720c602728e8f6d8079a5038b45a5e9d/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                }
+            ]
+        }
+    ]
+}

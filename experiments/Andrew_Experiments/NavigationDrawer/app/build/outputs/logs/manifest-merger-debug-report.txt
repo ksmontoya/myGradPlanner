@@ -1,0 +1,169 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:design:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/4215b1d019b57a867e7c24abeeea35f5/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/720c602728e8f6d8079a5038b45a5e9d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/avogler/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5f2021eb757e44f067a0b631cba9caa1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ebf0ae4b579f327249c51e05f8ec1cd5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/0b3d7459da5eb88fee31a19543f35800/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/c73390ca15fa6ca7feaacd282abf268d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/ea5e821ecd5b67250c1d9196d4f9a19d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/cd14d8560190cb575fef7fb9cc0a9020/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/ef62c2f3da7674c81256cc383185ba13/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/37a6caa39a2cf9f5f90e62bf3863e0ff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/b947d85404f8dc4eff12380a757402d8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/cdef32d8d64400256ce6b5f92bb510ff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/7312af9141448309cf9a85dd8202e04d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/42079acdbceb0102b3deb1ef519fba9b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/bb2e7ae779e3b8bd6ca48ac1f26cde8a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/f3f6518e22c466adeb5b443391a0dc24/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/388a61c1433fccec8b8c260d7b91b0fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/32c84803bc511d0b1f368e43fd7425de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/fbbbdafdac57c0bbfd23e3855cc4d050/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5bf4cf2b07f958fd1b9d9d27c20d7778/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/3379747cef2a26c7436850c98e8ac5f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/9b1db931f9f15b19d1ef88c3ce43df03/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/78ce1c6ef24397307b33f070f295e818/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/96424b16cebdeff291d128a46ce0fb3b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/490c32871df1ba127516be209e3b387e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/883ad7625fcb7d9386ae139352744bea/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8659cb97898c56f8cef32724c980fa5b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/c8c37c5caff019fa3d367124dc6cabbc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/46f78d73aa5241b47b956bf32a8de708/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/014304109108dae38fbd6726707f8837/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support:design:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/4215b1d019b57a867e7c24abeeea35f5/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/4215b1d019b57a867e7c24abeeea35f5/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/avogler/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5f2021eb757e44f067a0b631cba9caa1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/avogler/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5f2021eb757e44f067a0b631cba9caa1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/fbbbdafdac57c0bbfd23e3855cc4d050/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/fbbbdafdac57c0bbfd23e3855cc4d050/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5bf4cf2b07f958fd1b9d9d27c20d7778/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5bf4cf2b07f958fd1b9d9d27c20d7778/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/fbbbdafdac57c0bbfd23e3855cc4d050/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.avogler.navigationdrawer.MainActivity
+ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:12:9-21:20
+	android:label
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:14:13-45
+	android:theme
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/4215b1d019b57a867e7c24abeeea35f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc02.aar/4215b1d019b57a867e7c24abeeea35f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/720c602728e8f6d8079a5038b45a5e9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc02.aar/720c602728e8f6d8079a5038b45a5e9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/avogler/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5f2021eb757e44f067a0b631cba9caa1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/avogler/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5f2021eb757e44f067a0b631cba9caa1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ebf0ae4b579f327249c51e05f8ec1cd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc02.aar/ebf0ae4b579f327249c51e05f8ec1cd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/0b3d7459da5eb88fee31a19543f35800/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc02.aar/0b3d7459da5eb88fee31a19543f35800/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/c73390ca15fa6ca7feaacd282abf268d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc02.aar/c73390ca15fa6ca7feaacd282abf268d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/ea5e821ecd5b67250c1d9196d4f9a19d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc02.aar/ea5e821ecd5b67250c1d9196d4f9a19d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/cd14d8560190cb575fef7fb9cc0a9020/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc02.aar/cd14d8560190cb575fef7fb9cc0a9020/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/ef62c2f3da7674c81256cc383185ba13/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc02.aar/ef62c2f3da7674c81256cc383185ba13/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/37a6caa39a2cf9f5f90e62bf3863e0ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc02.aar/37a6caa39a2cf9f5f90e62bf3863e0ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/b947d85404f8dc4eff12380a757402d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc02.aar/b947d85404f8dc4eff12380a757402d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/cdef32d8d64400256ce6b5f92bb510ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc02.aar/cdef32d8d64400256ce6b5f92bb510ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/7312af9141448309cf9a85dd8202e04d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc02.aar/7312af9141448309cf9a85dd8202e04d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/42079acdbceb0102b3deb1ef519fba9b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc02.aar/42079acdbceb0102b3deb1ef519fba9b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/bb2e7ae779e3b8bd6ca48ac1f26cde8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc02.aar/bb2e7ae779e3b8bd6ca48ac1f26cde8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/f3f6518e22c466adeb5b443391a0dc24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc02.aar/f3f6518e22c466adeb5b443391a0dc24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/388a61c1433fccec8b8c260d7b91b0fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc02.aar/388a61c1433fccec8b8c260d7b91b0fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/32c84803bc511d0b1f368e43fd7425de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc02.aar/32c84803bc511d0b1f368e43fd7425de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/fbbbdafdac57c0bbfd23e3855cc4d050/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc02.aar/fbbbdafdac57c0bbfd23e3855cc4d050/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5bf4cf2b07f958fd1b9d9d27c20d7778/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc02.aar/5bf4cf2b07f958fd1b9d9d27c20d7778/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/3379747cef2a26c7436850c98e8ac5f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc02.aar/3379747cef2a26c7436850c98e8ac5f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/9b1db931f9f15b19d1ef88c3ce43df03/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc02.aar/9b1db931f9f15b19d1ef88c3ce43df03/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/78ce1c6ef24397307b33f070f295e818/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/78ce1c6ef24397307b33f070f295e818/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/96424b16cebdeff291d128a46ce0fb3b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc02.aar/96424b16cebdeff291d128a46ce0fb3b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/490c32871df1ba127516be209e3b387e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc02.aar/490c32871df1ba127516be209e3b387e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/883ad7625fcb7d9386ae139352744bea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc02.aar/883ad7625fcb7d9386ae139352744bea/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8659cb97898c56f8cef32724c980fa5b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/8659cb97898c56f8cef32724c980fa5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/c8c37c5caff019fa3d367124dc6cabbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc02] /home/avogler/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc02.aar/c8c37c5caff019fa3d367124dc6cabbc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/46f78d73aa5241b47b956bf32a8de708/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/46f78d73aa5241b47b956bf32a8de708/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/014304109108dae38fbd6726707f8837/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/avogler/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/014304109108dae38fbd6726707f8837/AndroidManifest.xml:20:5-44
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+		ADDED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/AndroidManifest.xml
