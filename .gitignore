@@ -1,5 +1,6 @@
 
 *.properties
+experiments/Arnoldo_Experiments/Back_End/\.metadata/
 
 # Operating System Files
 
@@ -98,3 +99,5 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+
