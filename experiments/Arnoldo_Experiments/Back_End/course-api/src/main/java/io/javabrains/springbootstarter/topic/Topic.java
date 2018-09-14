@@ -24,7 +24,7 @@ public class Topic {
 		this.name = name;
 	}
 	public String getDecription() {
-		return decription;
+		return decription; 
 	}
 	public void setDecription(String decription) {
 		this.decription = decription;
