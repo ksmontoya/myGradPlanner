@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/src/debug/jniLibs"/></dataSet></merger>
