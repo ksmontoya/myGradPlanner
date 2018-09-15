@@ -101,4 +101,4 @@ fastlane/test_output
 fastlane/readme.md
 
 
-experiments/Arnoldo_Experiments/Back_End/\.recommenders/
+*\.recommenders/
