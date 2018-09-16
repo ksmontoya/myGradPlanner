@@ -1,0 +1,4 @@
+#Tue Sep 11 14:31:11 CDT 2018
+base.0=/home/avogler/workspace/TG_MyGradPlanner/TG_2_MyGradPlanner/experiments/Andrew_Experiments/NavigationDrawer/app/build/intermediates/transforms/dexMerger/debug/10
+path.0=classes.dex
+renamed.0=classes.dex
