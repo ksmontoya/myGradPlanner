@@ -1,7 +1,13 @@
 package io.javabrains.springbootstarter.topic;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+//This creates a table in mysql database
+@Entity
 public class Topic {
 
+	@Id
 	private String id;
 	private String name;
 	private String decription;
