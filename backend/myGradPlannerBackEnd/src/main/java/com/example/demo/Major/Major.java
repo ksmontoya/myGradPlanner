@@ -8,6 +8,10 @@ public class Major {
 
 	@Id
 	private String id;
+
+	private String majorName;
+	private String MajorDescription;
+
 	public String getId() {
 		return id;
 	}
@@ -16,10 +20,6 @@ public class Major {
 		this.id = id;
 		return this;
 	}
-
-	private String majorName;
-	private String MajorDescription;
-
 
 	public String getMajorName() {
 		return majorName;
