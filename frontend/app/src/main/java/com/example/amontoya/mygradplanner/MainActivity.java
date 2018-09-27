@@ -14,7 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import retrieveClass.Retrieve_Class;
+//import retrieveClass.Retrieve_Class;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -84,10 +84,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_cpre_courses) {
+        if (id == R.id.nav_courses) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame
-                    , new Cpre_Classes_List())
+                    , new Classes())
                     .commit();
         } else if (id == R.id.nav_ee_courses) {
             fragmentManager.beginTransaction()
@@ -105,13 +105,12 @@ public class MainActivity extends AppCompatActivity
                             , new Tech_Classes_List())
                     .commit();
         } else if (id == R.id.nav_retrieve_class) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new Retrieve_Class())
-                    .commit();
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+//            fragmentManager.beginTransaction()
+//                    .replace(R.id.content_frame
+//                            , new Retrieve_Class())
+//                    .commit();
+        }
+          else if (id == R.id.nav_send) {
 
         }
 
