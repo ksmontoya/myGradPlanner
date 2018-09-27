@@ -20,6 +20,10 @@
             android:id="@+id/nav_tech_courses"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tech" />
+        <item
+            android:id="@+id/nav_retrieve_class"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Retrieve" />
     </group>
 
     <item android:title="Communicate">

@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import retrieveClass.Retrieve_Class;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -101,6 +103,11 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame
                             , new Tech_Classes_List())
+                    .commit();
+        } else if (id == R.id.nav_retrieve_class) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new Retrieve_Class())
                     .commit();
         } else if (id == R.id.nav_share) {
 
