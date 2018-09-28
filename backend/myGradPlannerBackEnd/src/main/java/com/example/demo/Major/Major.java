@@ -10,7 +10,7 @@ public class Major {
 	private String id;
 
 	private String majorName;
-	private String MajorDescription;
+	private String majorDescription;
 
 	public String getId() {
 		return id;
