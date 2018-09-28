@@ -80,7 +80,19 @@ public class Course {
 		super();
 	}
 
-
+	@Override
+	public String toString() {
+		return "Course{" +
+				"courseId='" + courseId + '\'' +
+				", courseLongName='" + courseLongName + '\'' +
+				", description='" + description + '\'' +
+				", ratingCount=" + ratingCount +
+				", ratingNumber=" + ratingNumber +
+				", major=" + major +
+				", preReqs=" + preReqs +
+				", postReq=" + postReq +
+				'}';
+	}
 }
 
 
