@@ -20,29 +20,29 @@ public class CourseController {
 	private CourseService CourseService;
 	
 	
-	@RequestMapping("/majors/{id}/courses")
+	@RequestMapping("/Majors/{id}/courses")
 	public List<Course> getAllCourses(@PathVariable String id) {
 		return CourseService.getAllCourses(id);
 	}
 	
-	@RequestMapping("/majors/{majorId}/courses/{courseId}")
+	@RequestMapping("/Majors/{majorId}/courses/{courseId}")
 	public Course getCourse(@PathVariable String courseId) {
 		return CourseService.getCourse(courseId);
 	}
 	
-	@RequestMapping(method=RequestMethod.POST, value="/majors/{majorId}/courses")
+	@RequestMapping(method=RequestMethod.POST, value="/Majors/{majorId}/courses")
 	public void addCourse(@RequestBody Course course, @PathVariable String majorId) {
 		course.setMajor(new Major().setId(majorId));
 		CourseService.addCourse(course);
 	}
 	
-	@RequestMapping(method=RequestMethod.PUT, value="/majors/{majorId}/courses/{courseId}")
+	@RequestMapping(method=RequestMethod.PUT, value="/Majors/{majorId}/courses/{courseId}")
 	public void updateCourse(@RequestBody Course course, @PathVariable String majorId, @PathVariable String courseId) {
 		course.setMajor(new Major().setId(majorId));
 		CourseService.updateCourse(course);
 	}
 	
-	@RequestMapping(method=RequestMethod.DELETE, value="/majors/{majorId}/courses/{courseId}")
+	@RequestMapping(method=RequestMethod.DELETE, value="/Majors/{majorId}/courses/{courseId}")
 	public void deleteCourse(@PathVariable String courseId) {
 		CourseService.deleteCourse(courseId);
 	}
