@@ -10,7 +10,7 @@ public class Major {
 	private String id;
 
 	private String majorName;
-	private String MajorDescription;
+	private String majorDescription;
 
 	public String getId() {
 		return id;
@@ -33,7 +33,7 @@ public class Major {
 		super();
 		this.id = id;
 		this.majorName = majorName;
-		MajorDescription = majorDescription;
+		this.majorDescription = majorDescription;
 	}
 
 	public Major() {
@@ -41,15 +41,23 @@ public class Major {
 	}
 
 	public String getMajorDescription() {
-		return MajorDescription;
+		return majorDescription;
 	}
 
 	public void setMajorDescription(String majorDescription) {
-		MajorDescription = majorDescription;
+		this.majorDescription = majorDescription;
 	}
 
+	@Override
+	public String toString() {
+		return "Major{" +
+				"id='" + id + '\'' +
+				", majorName='" + majorName + '\'' +
+				", majorDescription='" + majorDescription + '\'' +
+				'}';
+	}
 
-//only a test
+	//only a test
 //creating objects and coverting them into jsons
     public static void main(String[] args){
         Major majorObject = new MajorBuilder().setId("Music301").setMajorName("Music").setMajorDescription("This class teaches music").createMajor();
