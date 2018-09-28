@@ -33,7 +33,7 @@ public class Major {
 		super();
 		this.id = id;
 		this.majorName = majorName;
-		MajorDescription = majorDescription;
+		this.majorDescription = majorDescription;
 	}
 
 	public Major() {
@@ -41,11 +41,11 @@ public class Major {
 	}
 
 	public String getMajorDescription() {
-		return MajorDescription;
+		return majorDescription;
 	}
 
 	public void setMajorDescription(String majorDescription) {
-		MajorDescription = majorDescription;
+		this.majorDescription = majorDescription;
 	}
 
 }
