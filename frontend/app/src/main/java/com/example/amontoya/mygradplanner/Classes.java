@@ -15,6 +15,11 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
+
+import ClassLoaders.Course;
+import ClassLoaders.Major;
+import ClassLoaders.MajorBuilder;
 
 public class Classes extends android.app.Fragment {
 
@@ -40,7 +45,15 @@ public class Classes extends android.app.Fragment {
                             @Override
                             public void onResponse(String response) {
                                 // Display the first 500 characters of the response string.
-                                mTextView.setText(response);
+                                Major majorObject = new MajorBuilder().setMajorName("Com S").setId("Com S").createMajor();
+                                Gson gson = new Gson();
+                                String json = gson.toJson(majorObject);
+
+                                Major major = gson.fromJson(json, Major.class);
+                                Course courseToDisplay = gson.fromJson(json, Course.class);
+                                courseToDisplay.setDescription("This is it.");
+
+                                mTextView.setText(courseToDisplay.getDescription());
                             }
                         }, new Response.ErrorListener() {
                     @Override
