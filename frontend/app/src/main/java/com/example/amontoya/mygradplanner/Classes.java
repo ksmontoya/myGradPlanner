@@ -15,12 +15,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.util.List;
-
-import ClassLoaders.Course;
 
 public class Classes extends android.app.Fragment {
 
@@ -39,19 +33,14 @@ public class Classes extends android.app.Fragment {
             @Override
             public void onClick(View view) {
                 String url = editText.getText().toString();
-                final Gson gson = new Gson();
 
                 // Request a string response from the provided URL.
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://" + url,
                         new Response.Listener<String>() {
                             @Override
-                            public void onResponse(String json) {
-                                // Display the first 500 characters of the json string.
-                                List<Course> courseList = gson.fromJson(json, new TypeToken<List<Course>>(){}.getType());
-                                for(Course course: courseList){
-                                    System.out.println(course);
-                                }
-                                mTextView.setText(json);
+                            public void onResponse(String response) {
+                                // Display the first 500 characters of the response string.
+                                mTextView.setText(response);
                             }
                         }, new Response.ErrorListener() {
                     @Override
