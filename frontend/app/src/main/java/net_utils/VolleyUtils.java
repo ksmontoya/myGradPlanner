@@ -22,13 +22,13 @@ import ClassLoaders.Major;
 
 public class VolleyUtils {
 
-    public static void getMajorList(Context context, final VolleyResponseListener listener) {
+    public static void getMajorsList(Context context, final VolleyResponseListener listener) {
         Type returnType = new TypeToken<List<Major>>() {
         }.getType();
         makeHttpRequest(context, null, Request.Method.GET, returnType, listener, Const.URL_GET_MAJOR_LIST);
     }
 
-    public static void getCourseList(Context context, String majorId, final VolleyResponseListener listener) {
+    public static void getCoursesList(Context context, String majorId, final VolleyResponseListener listener) {
         String url = Const.URL_GET_COURSE_LIST.replace("{id}", majorId);
         Type returnType = new TypeToken<List<Course>>() {
         }.getType();
@@ -57,7 +57,7 @@ public class VolleyUtils {
     private static void makeHttpRequest(Context context, final Object postInput, int requestMethodType, final Type returnType, final VolleyResponseListener listener, String url) {
         final RequestQueue queue = Volley.newRequestQueue(context);
         final Gson gson = new Gson();
-        String jsonString = gson.toJson(postInput);
+        final String jsonString = gson.toJson(postInput);
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(requestMethodType, url,
@@ -76,20 +76,14 @@ public class VolleyUtils {
 
         }) {
             @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                if(returnType == Course.class){
-                    Map<String, String> returnMap = ((Course)postInput).getObjectMap();
-                    return returnMap;
-                }
-                else{
-                    return ((Major)postInput).getObjectMap();
-                }
+            public byte[] getBody() throws AuthFailureError {
+                return jsonString.getBytes();
             }
 
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> headers = new HashMap<>();
-                headers.put("Content-Type", "application/json; charset=utf-8");
+                headers.put("Content-Type", "application/json");
                 return headers;
             }
         };
@@ -98,17 +92,3 @@ public class VolleyUtils {
         queue.add(stringRequest);
     }
 }
-
-
-////TODO -- This will need implemented in the classes that make requests.
-//VolleyUtils.makeJsonObjectRequest(mContext, url, new VolleyResponseListener() {
-//@Override
-//public void onError(String message) {
-//
-//        }
-//
-//@Override
-//public void onResponse(Object response) {
-//
-//        }
-//        });

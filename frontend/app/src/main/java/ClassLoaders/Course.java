@@ -95,19 +95,6 @@ public class Course {
 				", postReq=" + postReq +
 				'}';
 	}
-
-    public Map<String,String> getObjectMap() {
-		Map<String, String> returnMap = new HashMap<String, String>();
-		returnMap.put("courseId",  courseId );
-		returnMap.put("courseLongName",  courseLongName );
-		returnMap.put("description",  description );
-		returnMap.put("ratingCount",  "" + ratingCount );
-		returnMap.put("ratingNumber",  "" + ratingNumber );
-		returnMap.put("major",  "" + major );
-		returnMap.put("preReqs",  "" + preReqs );
-		returnMap.put("postReq",  "" + postReq );
-		return returnMap;
-    }
 }
 
 
