@@ -16,13 +16,17 @@ public class MajorTest {
 
     @Test
     public void main() {
-        Major majorObject = new MajorBuilder().setMajorName("Music").setId("Com S").createMajor();
+        //Create a major object
+        Major majorObject = new MajorBuilder().setMajorName("Music").createMajor();
         Gson gson = new Gson();
+
+        //Turn major object to json
         String json = gson.toJson(majorObject);
         System.out.print("MajorClassssssssssssssssssssssssssS" +json.toString());
 
-        Major major = gson.fromJson(json, Major.class);
-        Course courseToDisplay = gson.fromJson(json, Course.class);
+        //Turn json string to major object
+        Major stuff = gson.fromJson(json, Major.class);
+        System.out.print("");
     }
 
     @Test
