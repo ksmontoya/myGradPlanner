@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/courses"
-        android:layout_width="173dp"
-        android:layout_height="78dp"
+        android:layout_width="156dp"
+        android:layout_height="36dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
@@ -24,15 +24,15 @@
 
     <Spinner
         android:id="@+id/major_dropdown"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/courses" />
 
@@ -45,5 +45,40 @@
         android:text="Post"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <EditText
+        android:id="@+id/CourseIDEntered"
+        android:layout_width="263dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:hint="Course ID"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major_dropdown" />
+
+
+    <EditText
+        android:id="@+id/CourseNameEntered"
+        android:layout_width="263dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="108dp"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major_dropdown" />
+
+    <EditText
+        android:id="@+id/CourseDescriptionEntered"
+        android:layout_width="263dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="180dp"
+        android:hint="Course Description"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major_dropdown" />
 
 </android.support.constraint.ConstraintLayout>

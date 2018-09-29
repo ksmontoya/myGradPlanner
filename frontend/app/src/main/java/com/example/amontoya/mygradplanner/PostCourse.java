@@ -7,20 +7,28 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import ClassLoaders.Course;
 import ClassLoaders.CourseBuilder;
 import ClassLoaders.Major;
+import ClassLoaders.MajorBuilder;
 import net_utils.VolleyResponseListener;
 import net_utils.VolleyUtils;
 
 public class PostCourse extends AppCompatActivity {
-
-    private String majorID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +38,6 @@ public class PostCourse extends AppCompatActivity {
         //variables elements
         final TextView mTextView = findViewById(R.id.courses);
         final List<Major> majorList = new ArrayList<Major>();
-
 
 
         //method to get the major Id and to create a course object
@@ -51,7 +58,7 @@ public class PostCourse extends AppCompatActivity {
                 }
 
                 majorDropDown(majorIDs);
-               // mTextView.setText("Success!" + majorIDs.toString());
+                // mTextView.setText("Success!" + majorIDs.toString());
             }
         });
 
@@ -59,10 +66,39 @@ public class PostCourse extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        majorID = ((Spinner)findViewById(R.id.major_dropdown)).getSelectedItem().toString();
-                        
+                        String majorID = ((Spinner) findViewById(R.id.major_dropdown)).getSelectedItem().toString();
+
+                        //GETS THE ID NAME AND DESCRIPTION FROM THE USER
+                        EditText IDEditText = (EditText) findViewById(R.id.CourseIDEntered);
+                        String courseID = IDEditText.getText().toString();
+
+                        EditText NameEditText = (EditText) findViewById(R.id.CourseNameEntered);
+                        String courseName = NameEditText.getText().toString();
+
+                        EditText DescriptionEditText = (EditText) findViewById(R.id.CourseDescriptionEntered);
+                        String courseDescription = DescriptionEditText.getText().toString();
+
+
+                        //CREATES THE OBJECT TO BE SENT
+                        createAnObject();
+
                     }
                 });
+
+    }
+
+    private void createAnObject(String MajorId , String courseId, String courseName, String courseDescription) {
+        Course majorObject = new CourseBuilder().setMajorId(MajorId).setCourseId(courseId).setCourseLongName(courseName).setDescription(courseDescription).createCourse();
+        Gson gson = new Gson();
+
+        //Turn major object to json
+        String json = gson.toJson(majorObject);
+//        System.out.print("MajorClassssssssssssssssssssssssssS" +json.toString());
+//
+//        //Turn json string to major object
+//        Major stuff = gson.fromJson(json, Major.class);
+//        System.out.print("");
+
 
     }
 
@@ -79,8 +115,6 @@ public class PostCourse extends AppCompatActivity {
         //((Spinner)findViewById(R.id.major_dropdown)).getSelectedItem()
 
     }
-
-
 
 
 }

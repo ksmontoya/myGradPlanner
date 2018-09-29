@@ -10,8 +10,6 @@ import org.junit.Test;
 import java.lang.reflect.Type;
 import java.util.Map;
 
-import static org.junit.Assert.*;
-
 public class MajorTest {
 
     @Test
@@ -33,7 +31,7 @@ public class MajorTest {
     public void tryStuff() {
         Gson gson = new Gson();
         JsonParser parser = new JsonParser();
-        final Course course = new CourseBuilder().setMajorId("Com S").setCourseShortName("Com S 327").setCourseLongName("Advanced Programming techniques").setDescription("You will learn c in this course yo").createCourse();
+        final Course course = new CourseBuilder().setMajorId("Com S").setCourseId("Com S 327").setCourseLongName("Advanced Programming techniques").setDescription("You will learn c in this course yo").createCourse();
         Type type = new TypeToken<Map<String, String>>() {
         }.getType();
 
