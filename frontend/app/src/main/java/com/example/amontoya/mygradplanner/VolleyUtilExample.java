@@ -2,6 +2,7 @@ package com.example.amontoya.mygradplanner;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 import android.widget.TextView;
 import ClassLoaders.Course;
 import ClassLoaders.CourseBuilder;
@@ -15,6 +16,7 @@ public class VolleyUtilExample extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.volley_util_example);
+
 
         final TextView mTextView = findViewById(R.id.message);
         final Course course = new CourseBuilder().setMajorId("Com S").setCourseShortName("Com S 327").setCourseLongName("Advanced Programming techniques").setDescription("You will learn c in this course yo").createCourse();
