@@ -21,8 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".coursePut" />
-        <activity android:name=".courseGet"></activity>
+        <activity android:name=".PostCourse" />
+        <activity android:name=".VolleyUtilExample" />
+        <activity android:name=".GetCourse"></activity>
     </application>
 
 </manifest>

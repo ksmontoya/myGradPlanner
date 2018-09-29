@@ -3,11 +3,11 @@ package com.example.amontoya.mygradplanner;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class courseGet extends AppCompatActivity {
+public class GetCourse extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_course_get);
+        setContentView(R.layout.activity_get_course);
     }
 }

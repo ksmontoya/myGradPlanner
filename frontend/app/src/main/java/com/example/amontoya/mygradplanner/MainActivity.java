@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(MainActivity.this, coursePut.class);
+                        Intent intent = new Intent(MainActivity.this, PostCourse.class);
                         startActivity(intent);
                     }
                 });
@@ -59,7 +59,16 @@ public class MainActivity extends AppCompatActivity
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(MainActivity.this, courseGet.class);
+                        Intent intent = new Intent(MainActivity.this, GetCourse.class);
+                        startActivity(intent);
+                    }
+                });
+
+        ((Button) findViewById(R.id.volley_example_button))
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, VolleyUtilExample.class);
                         startActivity(intent);
                     }
                 });
@@ -105,10 +114,8 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.nav_courses) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new Classes())
-                    .commit();
+            Intent intent = new Intent(MainActivity.this, VolleyUtilExample.class);
+            startActivity(intent);
         } else if (id == R.id.nav_ee_courses) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame
