@@ -72,6 +72,15 @@ public class MainActivity extends AppCompatActivity
                         startActivity(intent);
                     }
                 });
+
+        ((Button) findViewById(R.id.get_course_list_button))
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, GetCourseList.class);
+                        startActivity(intent);
+                    }
+                });
     }
 
     @Override

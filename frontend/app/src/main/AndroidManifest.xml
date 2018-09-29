@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".PostCourse" />
         <activity android:name=".VolleyUtilExample" />
-        <activity android:name=".GetCourse"></activity>
+        <activity android:name=".GetCourse" />
+        <activity android:name=".GetCourseList"></activity>
     </application>
 
 </manifest>
