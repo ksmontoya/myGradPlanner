@@ -13,6 +13,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -56,6 +57,7 @@ public class VolleyUtils {
     private static void makeHttpRequest(Context context, final Object postInput, int requestMethodType, final Type returnType, final VolleyResponseListener listener, String url) {
         final RequestQueue queue = Volley.newRequestQueue(context);
         final Gson gson = new Gson();
+        String jsonString = gson.toJson(postInput);
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(requestMethodType, url,
@@ -75,11 +77,20 @@ public class VolleyUtils {
         }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                Type type = new TypeToken<Map<String, String>>() {
-                }.getType();
-                String json = gson.toJson((Course)postInput);
-                Map<String, String> myMap = gson.fromJson(json, type);
-                return myMap;
+                if(returnType == Course.class){
+                    Map<String, String> returnMap = ((Course)postInput).getObjectMap();
+                    return returnMap;
+                }
+                else{
+                    return ((Major)postInput).getObjectMap();
+                }
+            }
+
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Content-Type", "application/json; charset=utf-8");
+                return headers;
             }
         };
 

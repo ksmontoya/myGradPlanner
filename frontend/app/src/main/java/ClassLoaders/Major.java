@@ -4,6 +4,8 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.util.Map;
+
 public class Major {
 
 
@@ -65,5 +67,9 @@ public class Major {
         Gson gson = new Gson();
         String json = gson.toJson(majorObject);
         System.out.print("MajorClassssssssssssssssssssssssssS" +json.toString());
+    }
+
+    public Map<String,String> getObjectMap() {
+		return null;
     }
 }
