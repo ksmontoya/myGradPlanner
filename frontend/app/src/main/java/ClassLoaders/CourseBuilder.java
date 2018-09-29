@@ -3,12 +3,19 @@ package ClassLoaders;
 import java.util.List;
 
 public class CourseBuilder {
+    /**
+     * You absolutely need courseShortname, this is the ID
+     */
     private String courseShortName;
+    /**
+     * You absolutely need majorId, this is the way we will find it by
+     */
+    private String majorId;
+
     private String courseLongName;
     private String description;
     private int ratingCount;
     private float ratingNumber;
-    private String majorId;
     private List<String> preReqs;
     private List<String> postReq;
 

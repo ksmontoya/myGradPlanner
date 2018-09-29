@@ -64,9 +64,8 @@ public class VolleyUtils {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String json) {
-                        // Display the first 500 characters of the json string.
-//                        Object returnObject = gson.fromJson(json, returnType);
-                        listener.onResponse("no");
+                        Object returnObject = gson.fromJson(json, returnType);
+                        listener.onResponse(returnObject);
                     }
                 }, new Response.ErrorListener() {
             @Override
