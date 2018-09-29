@@ -6,4 +6,6 @@
     <string name="nav_header_subtitle">Below is a list of courses</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="get_course">Get Course</string>
+    <string name="post_course">Post Course</string>
 </resources>
