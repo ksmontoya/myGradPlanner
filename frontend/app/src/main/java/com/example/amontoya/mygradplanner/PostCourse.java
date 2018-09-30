@@ -39,7 +39,7 @@ public class PostCourse extends AppCompatActivity {
         final TextView mTextView = findViewById(R.id.courses);
         final List<Major> majorList = new ArrayList<Major>();
 
-
+        //GETTING COURSE
         //method to get the major Id and to create a course object
         VolleyUtils.getMajorsList(getApplicationContext(), new VolleyResponseListener() {
             @Override
@@ -72,15 +72,15 @@ public class PostCourse extends AppCompatActivity {
                         EditText IDEditText = (EditText) findViewById(R.id.CourseIDEntered);
                         String courseID = IDEditText.getText().toString();
 
-                        EditText NameEditText = (EditText) findViewById(R.id.CourseNameEntered);
-                        String courseName = NameEditText.getText().toString();
+                        EditText nameEditText = (EditText) findViewById(R.id.CourseNameEntered);
+                        String courseName = nameEditText.getText().toString();
 
-                        EditText DescriptionEditText = (EditText) findViewById(R.id.CourseDescriptionEntered);
-                        String courseDescription = DescriptionEditText.getText().toString();
+                        EditText descriptionEditText = (EditText) findViewById(R.id.CourseDescriptionEntered);
+                        String courseDescription = descriptionEditText.getText().toString();
 
 
-                        //CREATES THE OBJECT TO BE SENT
-                        createAnObject();
+                        //CREATES AND SENDS A COURSE OBJECT TO THE SERVER
+                        createAnObject(majorID,courseID,courseName,courseDescription);
 
                     }
                 });
@@ -88,18 +88,30 @@ public class PostCourse extends AppCompatActivity {
     }
 
     private void createAnObject(String MajorId , String courseId, String courseName, String courseDescription) {
-        Course majorObject = new CourseBuilder().setMajorId(MajorId).setCourseId(courseId).setCourseLongName(courseName).setDescription(courseDescription).createCourse();
-        Gson gson = new Gson();
+        Course CourseObject = new CourseBuilder().setMajorId(MajorId).setCourseId(courseId).setCourseLongName(courseName).setDescription(courseDescription).createCourse();
 
-        //Turn major object to json
-        String json = gson.toJson(majorObject);
-//        System.out.print("MajorClassssssssssssssssssssssssssS" +json.toString());
-//
-//        //Turn json string to major object
-//        Major stuff = gson.fromJson(json, Major.class);
-//        System.out.print("");
+        //Sends this jason object to the server
+        sendObjectToServer(CourseObject);
 
+    }
 
+    private void sendObjectToServer(Course courseObject) {
+
+        final TextView mTextView = findViewById(R.id.courses);
+
+        VolleyUtils.postSingleCourse(getApplicationContext(),courseObject, courseObject.getMajor().getId(), new VolleyResponseListener() {
+            @Override
+            public void onError(String error) {
+                mTextView.setText("failed!");
+            }
+
+            @Override
+            public void onResponse(Object response) {
+                //What do you want to do if you succeed?
+
+                mTextView.setText("Success!");
+            }
+        });
     }
 
     protected void majorDropDown(List<String> majorList) {
@@ -115,6 +127,7 @@ public class PostCourse extends AppCompatActivity {
         //((Spinner)findViewById(R.id.major_dropdown)).getSelectedItem()
 
     }
+
 
 
 }
