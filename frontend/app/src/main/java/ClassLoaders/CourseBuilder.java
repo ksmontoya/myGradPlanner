@@ -6,7 +6,7 @@ public class CourseBuilder {
     /**
      * You absolutely need courseShortname, this is the ID
      */
-    private String courseShortName;
+    private String courseId;
     /**
      * You absolutely need majorId, this is the way we will find it by
      */
@@ -19,8 +19,8 @@ public class CourseBuilder {
     private List<String> preReqs;
     private List<String> postReq;
 
-    public CourseBuilder setCourseShortName(String courseShortName) {
-        this.courseShortName = courseShortName;
+    public CourseBuilder setCourseId(String courseId) {
+        this.courseId = courseId;
         return this;
     }
 
@@ -60,6 +60,6 @@ public class CourseBuilder {
     }
 
     public Course createCourse() {
-        return new Course(courseShortName, courseLongName, description, ratingCount, ratingNumber, majorId, preReqs, postReq);
+        return new Course(courseId, courseLongName, description, ratingCount, ratingNumber, majorId, preReqs, postReq);
     }
 }

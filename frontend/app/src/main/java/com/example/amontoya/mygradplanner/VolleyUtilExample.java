@@ -2,7 +2,6 @@ package com.example.amontoya.mygradplanner;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Button;
 import android.widget.TextView;
 import ClassLoaders.Course;
 import ClassLoaders.CourseBuilder;
@@ -19,7 +18,7 @@ public class VolleyUtilExample extends AppCompatActivity {
 
 
         final TextView mTextView = findViewById(R.id.message);
-        final Course course = new CourseBuilder().setMajorId("Com S").setCourseShortName("Com S 327").setCourseLongName("Advanced Programming techniques").setDescription("You will learn c in this course yo").createCourse();
+        final Course course = new CourseBuilder().setMajorId("Com S").setCourseId("Com S 327").setCourseLongName("Advanced Programming techniques").setDescription("You will learn c in this course yo").createCourse();
 
         /*
         1-To run volleyUtils, you have to write VolleyUtils.[What do you want to do?]

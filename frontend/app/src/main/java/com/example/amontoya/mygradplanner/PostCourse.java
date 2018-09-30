@@ -3,24 +3,34 @@ package com.example.amontoya.mygradplanner;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import ClassLoaders.Course;
 import ClassLoaders.CourseBuilder;
 import ClassLoaders.Major;
+import ClassLoaders.MajorBuilder;
 import net_utils.VolleyResponseListener;
 import net_utils.VolleyUtils;
 
 public class PostCourse extends AppCompatActivity {
-
-    private String majorID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,16 +38,17 @@ public class PostCourse extends AppCompatActivity {
         setContentView(R.layout.activity_post_course);
 
         //variables elements
-        final TextView mTextView = findViewById(R.id.courses);
+       // final TextView mTextView = findViewById(R.id.courses);
         final List<Major> majorList = new ArrayList<Major>();
 
-
-
+        //GETTING COURSE
         //method to get the major Id and to create a course object
         VolleyUtils.getMajorsList(getApplicationContext(), new VolleyResponseListener() {
             @Override
             public void onError(String error) {
-                mTextView.setText("failed!");
+               // mTextView.setText("failed!");
+                Toast.makeText(getBaseContext(), "Failed loading courses !",
+                        Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -51,19 +62,67 @@ public class PostCourse extends AppCompatActivity {
                 }
 
                 majorDropDown(majorIDs);
-               // mTextView.setText("Success!" + majorIDs.toString());
-            } final TextView mTextView = findViewById(R.id.Course_Name);
+                // mTextView.setText("Success!" + majorIDs.toString());
+            }
         });
 
         ((Button) findViewById(R.id.postButton))
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        majorID = ((Spinner)findViewById(R.id.major_dropdown)).getSelectedItem().toString();
-                        
+                        String majorID = ((Spinner) findViewById(R.id.major_dropdown)).getSelectedItem().toString();
+                        //GETS THE ID NAME AND DESCRIPTION FROM THE USER
+                        EditText IDEditText = (EditText) findViewById(R.id.CourseIDEntered);
+                        String courseID = IDEditText.getText().toString();
+
+                        EditText nameEditText = (EditText) findViewById(R.id.CourseNameEntered);
+                        String courseName = nameEditText.getText().toString();
+
+                        EditText descriptionEditText = (EditText) findViewById(R.id.CourseDescriptionEntered);
+                        String courseDescription = descriptionEditText.getText().toString();
+
+
+                        //CREATES AND SENDS A COURSE OBJECT TO THE SERVER
+                        if( TextUtils.isEmpty(IDEditText.getText())){
+                            IDEditText.setError( "courseId is required!" );
+
+                        }else{
+                            createAnObject(majorID,courseID,courseName,courseDescription);
+                        }
+
                     }
                 });
 
+    }
+
+    private void createAnObject(String MajorId , String courseId, String courseName, String courseDescription) {
+        Course CourseObject = new CourseBuilder().setMajorId(MajorId).setCourseId(courseId).setCourseLongName(courseName).setDescription(courseDescription).createCourse();
+
+        //Sends this jason object to the server
+        sendObjectToServer(CourseObject);
+
+    }
+
+    private void sendObjectToServer(Course courseObject) {
+
+        //final TextView mTextView = findViewById(R.id.courses);
+
+        VolleyUtils.postSingleCourse(getApplicationContext(),courseObject, courseObject.getMajor().getId(), new VolleyResponseListener() {
+            @Override
+            public void onError(String error) {
+                //mTextView.setText("failed!");
+                Toast.makeText(getBaseContext(), "Failed posting the course!",
+                        Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onResponse(Object response) {
+                //What do you want to do if you succeed?
+                //mTextView.setText("Success!");
+                Toast.makeText(getBaseContext(), "Succeed posting the course!",
+                        Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     protected void majorDropDown(List<String> majorList) {
@@ -79,7 +138,6 @@ public class PostCourse extends AppCompatActivity {
         //((Spinner)findViewById(R.id.major_dropdown)).getSelectedItem()
 
     }
-
 
 
 
