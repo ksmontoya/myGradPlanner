@@ -9,10 +9,6 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="Courses" />
         <item
-            android:id="@+id/nav_ee_courses"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="EE" />
-        <item
             android:id="@+id/nav_se_courses"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="SE" />
@@ -29,7 +25,7 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_about"
                 android:icon="@drawable/ic_menu_send"
                 android:title="About" />
         </menu>

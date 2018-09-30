@@ -125,11 +125,6 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_courses) {
             Intent intent = new Intent(MainActivity.this, VolleyUtilExample.class);
             startActivity(intent);
-        } else if (id == R.id.nav_ee_courses) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            , new EE_Classes_List())
-                    .commit();
         } else if (id == R.id.nav_se_courses) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame
@@ -140,13 +135,11 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.content_frame
                             , new Tech_Classes_List())
                     .commit();
-        } else if (id == R.id.nav_retrieve_class) {
-//            fragmentManager.beginTransaction()
-//                    .replace(R.id.content_frame
-//                            , new Retrieve_Class())
-//                    .commit();
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_about) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame
+                            , new About())
+                    .commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

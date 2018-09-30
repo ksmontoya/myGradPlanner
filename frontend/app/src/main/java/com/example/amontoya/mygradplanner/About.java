@@ -7,14 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class EE_Classes_List extends android.app.Fragment {
+public class About extends android.app.Fragment {
 
     View myView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.ee_courses, container, false);
+        myView = inflater.inflate(R.layout.about, container, false);
         return myView;
     }
 }
