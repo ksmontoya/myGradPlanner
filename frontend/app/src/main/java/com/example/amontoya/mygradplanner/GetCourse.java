@@ -20,7 +20,7 @@ public class GetCourse extends AppCompatActivity {
         final TextView mTextView = findViewById(R.id.Course_Name);
         final TextView nTextView = findViewById(R.id.Course_Description);
 
-        VolleyUtils.getSingleCourse(getApplicationContext(), "Com S", "ComS228", new VolleyResponseListener() {
+        VolleyUtils.getSingleCourse(getApplicationContext(), "Com S", "Com S 327", new VolleyResponseListener() {
             @Override
             public void onError(String error) {
                 mTextView.setText("Error");

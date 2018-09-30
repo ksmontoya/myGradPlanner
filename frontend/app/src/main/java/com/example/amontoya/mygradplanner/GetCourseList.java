@@ -8,6 +8,8 @@ import ClassLoaders.Course;
 import net_utils.VolleyResponseListener;
 import net_utils.VolleyUtils;
 
+import java.util.List;
+
 public class GetCourseList extends AppCompatActivity {
 
     @Override
@@ -25,8 +27,12 @@ public class GetCourseList extends AppCompatActivity {
 
             @Override
             public void onResponse(Object response) {
-                Course course = (Course) response;
-                mTextView.setText(response.toString());
+                List<Course> courses = (List) response;
+                String result = "";
+                for(int i = 0; i < courses.size(); i++){
+                    result += (courses.get(i)).getCourseId() + ", ";
+                }
+                mTextView.setText(result);
             }
         });
 
