@@ -17,15 +17,15 @@ public class GetCourseList extends AppCompatActivity {
 
         final TextView mTextView = findViewById(R.id.Course_Names);
 
-        VolleyUtils.getCoursesList(getApplicationContext(), "ComS", new VolleyResponseListener() {
+        VolleyUtils.getCoursesList(getApplicationContext(), "Com S", new VolleyResponseListener() {
             @Override
             public void onError(String error) {
-                mTextView.setText("Failed Course Names");
+                mTextView.setText("Error");
             }
 
             @Override
             public void onResponse(Object response) {
-//                Course course = (Course) response;
+                Course course = (Course) response;
                 mTextView.setText(response.toString());
             }
         });
