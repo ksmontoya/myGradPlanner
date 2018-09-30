@@ -3,6 +3,7 @@ package com.example.amontoya.mygradplanner;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -36,7 +38,7 @@ public class PostCourse extends AppCompatActivity {
         setContentView(R.layout.activity_post_course);
 
         //variables elements
-        final TextView mTextView = findViewById(R.id.courses);
+       // final TextView mTextView = findViewById(R.id.courses);
         final List<Major> majorList = new ArrayList<Major>();
 
         //GETTING COURSE
@@ -44,7 +46,9 @@ public class PostCourse extends AppCompatActivity {
         VolleyUtils.getMajorsList(getApplicationContext(), new VolleyResponseListener() {
             @Override
             public void onError(String error) {
-                mTextView.setText("failed!");
+               // mTextView.setText("failed!");
+                Toast.makeText(getBaseContext(), "Failed loading courses !",
+                        Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -67,7 +71,6 @@ public class PostCourse extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         String majorID = ((Spinner) findViewById(R.id.major_dropdown)).getSelectedItem().toString();
-
                         //GETS THE ID NAME AND DESCRIPTION FROM THE USER
                         EditText IDEditText = (EditText) findViewById(R.id.CourseIDEntered);
                         String courseID = IDEditText.getText().toString();
@@ -80,7 +83,12 @@ public class PostCourse extends AppCompatActivity {
 
 
                         //CREATES AND SENDS A COURSE OBJECT TO THE SERVER
-                        createAnObject(majorID,courseID,courseName,courseDescription);
+                        if( TextUtils.isEmpty(IDEditText.getText())){
+                            IDEditText.setError( "courseId is required!" );
+
+                        }else{
+                            createAnObject(majorID,courseID,courseName,courseDescription);
+                        }
 
                     }
                 });
@@ -97,19 +105,22 @@ public class PostCourse extends AppCompatActivity {
 
     private void sendObjectToServer(Course courseObject) {
 
-        final TextView mTextView = findViewById(R.id.courses);
+        //final TextView mTextView = findViewById(R.id.courses);
 
         VolleyUtils.postSingleCourse(getApplicationContext(),courseObject, courseObject.getMajor().getId(), new VolleyResponseListener() {
             @Override
             public void onError(String error) {
-                mTextView.setText("failed!");
+                //mTextView.setText("failed!");
+                Toast.makeText(getBaseContext(), "Failed posting the course!",
+                        Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onResponse(Object response) {
                 //What do you want to do if you succeed?
-
-                mTextView.setText("Success!");
+                //mTextView.setText("Success!");
+                Toast.makeText(getBaseContext(), "Succeed posting the course!",
+                        Toast.LENGTH_LONG).show();
             }
         });
     }
