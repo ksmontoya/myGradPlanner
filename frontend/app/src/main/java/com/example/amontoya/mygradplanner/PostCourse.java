@@ -52,7 +52,7 @@ public class PostCourse extends AppCompatActivity {
 
                 majorDropDown(majorIDs);
                // mTextView.setText("Success!" + majorIDs.toString());
-            }
+            } final TextView mTextView = findViewById(R.id.Course_Name);
         });
 
         ((Button) findViewById(R.id.postButton))
