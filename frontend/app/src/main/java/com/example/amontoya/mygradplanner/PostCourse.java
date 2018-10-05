@@ -38,10 +38,10 @@ public class PostCourse extends AppCompatActivity {
         setContentView(R.layout.activity_post_course);
 
         //variables elements
-       // final TextView mTextView = findViewById(R.id.courses);
+       // finGETTINGal TextView mTextView = findViewById(R.id.courses);
         final List<Major> majorList = new ArrayList<Major>();
 
-        //GETTING COURSE
+        // COURSE
         //method to get the major Id and to create a course object
         VolleyUtils.getMajorsList(getApplicationContext(), new VolleyResponseListener() {
             @Override
