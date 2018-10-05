@@ -1827,3 +1827,8 @@
 2018-09-10 16:16:04,779 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/karla/School/Fall-18/309 android/TG_2_MyGradPlanner/experiments/Karla_Experiments/Back_End/course-api/src/main/resources
 2018-09-10 16:16:04,784 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-09-10 16:16:04,784 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/karla/School/Fall-18/309 android/TG_2_MyGradPlanner/experiments/Karla_Experiments/Back_End/course-api/src/test/resources
+2018-09-17 16:16:04,336 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-17 16:16:04,340 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/karla/School/Fall-18/309 android/TG_2_MyGradPlanner/experiments/Karla_Experiments/Back_End/course-api/src/main/resources
+2018-09-17 16:16:04,340 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/karla/School/Fall-18/309 android/TG_2_MyGradPlanner/experiments/Karla_Experiments/Back_End/course-api/src/main/resources
+2018-09-17 16:16:04,344 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-17 16:16:04,345 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/karla/School/Fall-18/309 android/TG_2_MyGradPlanner/experiments/Karla_Experiments/Back_End/course-api/src/test/resources

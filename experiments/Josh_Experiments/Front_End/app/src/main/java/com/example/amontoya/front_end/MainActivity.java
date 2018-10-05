@@ -11,8 +11,10 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+
+import org.json.JSONObject;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -33,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 String url = editText.getText().toString();
 
                 // Request a string response from the provided URL.
-                StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://" + url,
-                        new Response.Listener<String>() {
+                JsonObjectRequest jsonRequest = new JsonObjectRequest
+                        (Request.Method.GET, "http://" + url, null, new Response.Listener<JSONObject>() {
                             @Override
-                            public void onResponse(String response) {
+                            public void onResponse(JSONObject response) {
                                 // Display the first 500 characters of the response string.
-                                mTextView.setText(response);
+                                mTextView.setText("Response" + response.toString());
                             }
                         }, new Response.ErrorListener() {
                     @Override
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 });
 
                 // Add the request to the RequestQueue.
-                queue.add(stringRequest);
+                queue.add(jsonRequest);
             }
         });
     }
