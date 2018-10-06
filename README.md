@@ -1,2 +1,1 @@
-# TG_2_MyGradPlanner
-
+MyGradPlanner: Working as part of four member team to to create an app. The application’s core will allow ISU students to create and plan out their four years of college by pre-planning which classes they take.
